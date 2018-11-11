@@ -23,7 +23,6 @@ Best with Neovim or Vim 8 with +python3 extensions enabled.
 ## Screenshot
 
 ![Vim screenshot](http://rafi.io/static/img/project/vim-config/features.png)
-![Neovim python](http://7ktuty.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-12-22%20%E4%B8%8B%E5%8D%885.24.28%20%282%29.png)
 
 ## Pre-requisites
 
@@ -765,10 +764,12 @@ See this [Vim text rendering off by one issue](https://www.reddit.com/r/vim/comm
 
 See this issue https://stackoverflow.com/questions/43107435/emoji-display-issue-in-vim-with-tmux/52142277#52142277
 
-## 解决中文输入问题。
+## 解决中文输入问题。(mac)
 解决中文输入法在 vim 下的使用问题，仅针对 mac 测试过，理论上三个平台都可以使用。
 如果是插入模式下输入中文，当离开插入模式进入 normal 模式的时候，会自动切换成英文输入法，无需每次手动切换非常麻烦。
 
-1. git clone https://github.com/myshov/libxkbswitch-macosx
-2. cp libxkbswitch-macosx/bin/libxkbswitch.dylib  /usr/local/lib/
-3. install plugin: https://github.com/lyokha/vim-xkbswitch
+1. git clone https://github.com/myshov/xkbswitch-macosx
+2. cp xkbswitch-macosx/bin/xkbswitch /usr/local/bin
+3. git clone https://github.com/myshov/libxkbswitch-macosx
+4. cp libxkbswitch-macosx/bin/libxkbswitch.dylib  /usr/local/lib/
+5. install plugin: https://github.com/lyokha/vim-xkbswitch
